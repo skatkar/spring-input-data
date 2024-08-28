@@ -17,7 +17,7 @@ public class InputController {
 
     @PostMapping("/data")
     public ResponseEntity<String> getUserData(@Valid @RequestBody InputData data) {
-        log.info("User provided data {}", data);
+        //log.info("User provided data {}", data);
         return ResponseEntity.ok()
                 .body("Yippee");
     }
